@@ -39,7 +39,7 @@ void insertion_sort_list(listint_t **list)
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
-	for (loop = (*list)->next; iter != NULL; loop = temp)
+	for (loop = (*list)->next; loop != NULL; loop = temp)
 	{
 		temp = loop->next;
 		insert = loop->prev;
